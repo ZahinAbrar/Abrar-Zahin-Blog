@@ -1,16 +1,15 @@
-<!-- Custom MathJax configuration for Minimal Mistakes -->
 <script>
   window.MathJax = {
     tex: {
-      // Enable both $...$ and \( ... \) for inline math
       inlineMath: [['$', '$'], ['\\(', '\\)']],
-      // Enable both $$...$$ and \[ ... \] for block math
-      displayMath: [['$$','$$'], ['\\[','\\]']]
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true
     },
     options: {
-      // Don’t try to render math inside code blocks, pre, etc.
       skipHtmlTags: ['script','noscript','style','textarea','pre','code']
     }
   };
 </script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 
