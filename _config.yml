@@ -58,3 +58,6 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# Enable MathJax globally
+mathjax: true
