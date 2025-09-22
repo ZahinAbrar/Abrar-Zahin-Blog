@@ -1,57 +1,43 @@
 title: "Abrar Zahin — ML Research Blog"
 description: "Notes on Gaussian graphical models, statistical ML, agents, and computational pathology"
 url: "https://zahinabrar.github.io"
-baseurl: "/Abrar-Zahin-Blog"   # MUST match the repo name (case-sensitive)
+baseurl: "/Abrar-Zahin-Blog"
 
-# Theme
+# Use Minimal Mistakes via remote theme
 remote_theme: "mmistakes/minimal-mistakes@4.26.0"
-minimal_mistakes_skin: "default"   # other options: air, dark, neon, etc.
+minimal_mistakes_skin: "default"
 
-# Markdown & math
 markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
 highlighter: rouge
 
-# Pretty URLs for posts
 permalink: /posts/:year-:month-:day-:title/
-
-# Pagination & search
 paginate: 10
 search: true
 locale: en
 
-# Author box under posts
 author:
   name: "Abrar Zahin"
-  avatar: "/Abrar-Zahin-Blog/assets/img/avatar.jpg"   # put an image here or remove this line
+  avatar: "/Abrar-Zahin-Blog/assets/img/avatar.jpg"
   bio: "PhD @ ASU. Statistical ML, GGMs, agents."
   links:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/zahinabrar"
-    - label: "Google Scholar"
-      icon: "fas fa-graduation-cap"
-      url: "https://scholar.google.com/"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/"
 
-# Plugins
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache     # <-- required for include_cached
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-archives
 
-# Archives for tags & categories
 jekyll-archives:
-  enabled:
-    - categories
-    - tags
+  enabled: [categories, tags]
   layouts:
     tag: archive
     category: archive
@@ -59,11 +45,8 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-# Defaults: make posts use the "single" layout with sticky TOC
 defaults:
-  - scope:
-      path: ""
-      type: posts
+  - scope: { path: "", type: posts }
     values:
       layout: single
       classes: wide
@@ -71,12 +54,7 @@ defaults:
       toc_sticky: true
       read_time: true
       author_profile: true
-  - scope:
-      path: ""
-      type: pages
+  - scope: { path: "", type: pages }
     values:
       layout: single
       author_profile: true
-
-
-
