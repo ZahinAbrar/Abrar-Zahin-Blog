@@ -4,27 +4,15 @@ categories: [intro]
 tags: [hello, math]
 layout: single
 toc: false
-mathjax: true   # enable MathJax on this page (Minimal Mistakes)
+mathjax: true   # this loads MathJax scripts for the page
 ---
 
-A tiny test post to verify that math renders correctly.
+Inline math: \\( \Theta_{ij} = 0 \iff X_i \perp X_j \mid X_{\setminus\{i,j\}} \\).
 
-Inline math example: \\( \Theta_{ij} = 0 \iff X_i \perp X_j \mid X_{\setminus\{i,j\}} \\).
-
-Block math example:
+Block math:
 
 $$
 \mathcal{L}(\Theta)
-= \log\det(\Theta) - \mathrm{tr}(S\Theta)
-\quad\text{with}\quad
-\Theta \succ 0
+= \log\det(\Theta) - \mathrm{tr}(S\Theta).
 $$
-
-Another display using \\[ ... \\] delimiters:
-
-\\[
-\arg\min_{\Theta \succ 0} \; -\log\det(\Theta) + \mathrm{tr}(S\Theta) + \lambda \|\Theta\|_{1}.
-\\]
-
-If you can read these formulas on your blog page, MathJax is working ✅
 
