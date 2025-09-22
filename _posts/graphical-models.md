@@ -1,26 +1,14 @@
----
-title: "Notes on Graphical Models"
+title: "Test Post"
 layout: single
-categories: [intro]
-tags: [hello, math]
+categories: [notes]
+tags: [test]
 mathjax: true
 ---
 
-A tiny test post to verify that math renders correctly.
+This is a test post to confirm publishing works.
 
-**Inline math:** $ \Theta_{ij} = 0 \iff X_i \perp X_j \mid X_{\setminus\{i,j\}} $.
-
-**Block math:**
+Inline math: $a^2 + b^2 = c^2$.
 
 $$
-\mathcal{L}(\Theta)
-= \log\det(\Theta) - \mathrm{tr}(S\Theta)
-\quad\text{with}\quad
-\Theta \succ 0
-$$
-
-**Another display:**
-
-$$
-\arg\min_{\Theta \succ 0}\; -\log\det(\Theta) + \mathrm{tr}(S\Theta) + \lambda \lVert \Theta \rVert_{1}.
+\int_0^1 x^2 \, dx = \frac{1}{3}
 $$
