@@ -3,20 +3,9 @@ description: "Notes on GGMs, agents, and computational pathology"
 url: "https://zahinabrar.github.io"
 baseurl: "/Abrar-Zahin-Blog"
 
-# Minimal Mistakes (remote theme)
-remote_theme: "mmistakes/minimal-mistakes@4.26.0"
+# Use GitHub Pages' built-in theme (very reliable)
+theme: minima
 
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
 
-paginate: 10
-markdown: kramdown
-kramdown:
-  input: GFM
-  math_engine: mathjax
-
-# Optional: nice permalinks for posts
-permalink: /posts/:year-:month-:day-:title/
