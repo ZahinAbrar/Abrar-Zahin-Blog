@@ -1,7 +1,7 @@
 ---
 title: "Hello, World (with Math)"
 layout: single
-categories: intro
+categories: [intro]
 tags: [hello, math]
 mathjax: true
 ---
@@ -19,10 +19,11 @@ $$
 \Theta \succ 0
 $$
 
-Another display:
+**Another display:**
 
 $$
 \arg\min_{\Theta \succ 0}\; -\log\det(\Theta) + \mathrm{tr}(S\Theta) + \lambda \lVert \Theta \rVert_{1}.
 $$
+
 
 
