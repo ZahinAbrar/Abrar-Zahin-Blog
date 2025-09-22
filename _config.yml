@@ -1,14 +1,3 @@
-<!-- title: "Abrar’s Blog" #
-description: "Notes on GGMs, agents, and computational pathology"
-url: "https://zahinabrar.github.io"
-baseurl: "/Abrar-Zahin-Blog"
-
-# Use GitHub Pages' built-in theme (very reliable)
-theme: minima
-
-plugins:
-  - jekyll-feed -->
-
 title: "Abrar Zahin — ML Research Blog"
 description: "Notes on Gaussian graphical models, statistical ML, agents, and computational pathology"
 url: "https://zahinabrar.github.io"
