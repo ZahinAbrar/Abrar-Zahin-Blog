@@ -1,7 +1,7 @@
 ---
 title: "Hello, World (with Math)"
 layout: single
-categories: [intro]
+categories: intro
 tags: [hello, math]
 mathjax: true
 ---
