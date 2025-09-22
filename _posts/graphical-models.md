@@ -1,3 +1,4 @@
+---
 title: "Test Post"
 layout: single
 categories: [notes]
