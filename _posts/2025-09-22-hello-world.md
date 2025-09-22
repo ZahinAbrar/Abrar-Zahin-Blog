@@ -7,7 +7,7 @@ toc: false
 mathjax: true   # this loads MathJax scripts for the page
 ---
 
-Inline math: \\( \Theta_{ij} = 0 \iff X_i \perp X_j \mid X_{\setminus\{i,j\}} \\).
+Inline math: $ \Theta_{ij} = 0 \iff X_i \perp X_j \mid X_{\setminus\{i,j\}} $.
 
 Block math:
 
