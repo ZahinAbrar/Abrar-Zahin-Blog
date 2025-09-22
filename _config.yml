@@ -7,9 +7,7 @@ baseurl: "/Abrar-Zahin-Blog"
 theme: minima
 
 plugins:
-  - jekyll-feed
-  -->
-
+  - jekyll-feed -->
 
 title: "Abrar Zahin — ML Research Blog"
 description: "Notes on Gaussian graphical models, statistical ML, agents, and computational pathology"
@@ -38,7 +36,7 @@ locale: en
 # Author box under posts
 author:
   name: "Abrar Zahin"
-  avatar: /Abrar-Zahin-Blog/assets/img/avatar.jpg   # put an image there or remove this line
+  avatar: "/Abrar-Zahin-Blog/assets/img/avatar.jpg"   # put an image here or remove this line
   bio: "PhD @ ASU. Statistical ML, GGMs, agents."
   links:
     - label: "GitHub"
@@ -74,7 +72,9 @@ jekyll-archives:
 
 # Defaults: make posts use the "single" layout with sticky TOC
 defaults:
-  - scope: { path: "", type: posts }
+  - scope:
+      path: ""
+      type: posts
     values:
       layout: single
       classes: wide
@@ -82,9 +82,12 @@ defaults:
       toc_sticky: true
       read_time: true
       author_profile: true
-  - scope: { path: "", type: pages }
+  - scope:
+      path: ""
+      type: pages
     values:
       layout: single
       author_profile: true
+
 
 
