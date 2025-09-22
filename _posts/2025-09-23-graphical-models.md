@@ -1,5 +1,5 @@
 ---
-title: "Hello, World (with Math)"
+title: "Notes on Graphical Models"
 layout: single
 categories: [intro]
 tags: [hello, math]
