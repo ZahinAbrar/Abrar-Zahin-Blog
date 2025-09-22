@@ -8,7 +8,7 @@ mathjax: true
 
 A tiny test post to verify that math renders correctly.
 
-**Inline math:** \( \Theta_{ij} = 0 \iff X_i \perp X_j \mid X_{\setminus\{i,j\}} \).
+**Inline math:** $ \Theta_{ij} = 0 \iff X_i \perp X_j \mid X_{\setminus\{i,j\}} $.
 
 **Block math:**
 
