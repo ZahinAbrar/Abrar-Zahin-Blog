@@ -2,4 +2,5 @@
 layout: home
 title: "Abrar’s Blog"
 ---
-Hello! My blog is live 🚀
+
+Welcome! If you see this, the site is live.
