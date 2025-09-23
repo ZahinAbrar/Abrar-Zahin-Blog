@@ -1,0 +1,63 @@
+title: "Abrar Zahin — ML Research Blog"
+description: "Notes on Gaussian graphical models, statistical ML, agents, and computational pathology"
+url: "https://zahinabrar.github.io"
+baseurl: "/Abrar-Zahin-Blog"
+
+# Use Minimal Mistakes via remote theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.0"
+minimal_mistakes_skin: "default"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+highlighter: rouge
+
+permalink: /posts/:year-:month-:day-:title/
+paginate: 10
+search: true
+locale: en
+
+author:
+  name: "Abrar Zahin"
+  avatar: "/Abrar-Zahin-Blog/assets/img/avatar.jpg"
+  bio: "PhD @ ASU. Statistical ML, GGMs, agents."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/zahinabrar"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache     # <-- required for include_cached
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    tag: archive
+    category: archive
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+defaults:
+  - scope: { path: "", type: posts }
+    values:
+      layout: single
+      classes: wide
+      toc: true
+      toc_sticky: true
+      read_time: true
+      author_profile: true
+  - scope: { path: "", type: pages }
+    values:
+      layout: single
+      author_profile: true
+
+# Enable MathJax globally
+mathjax: true
