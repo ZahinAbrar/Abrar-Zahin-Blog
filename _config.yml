@@ -1,41 +1,32 @@
 title: "Abrar Zahin — ML Research Blog"
 description: "Notes on Gaussian graphical models, statistical ML, agents, and computational pathology"
-url: "https://zahinabrar.github.io"
-baseurl: "/Abrar-Zahin-Blog"
 
-# Use Minimal Mistakes via remote theme
+url: "https://zahinabrar.github.io"
+baseurl: "/Abrar-Zahin-Blog"   # keep this unless you rename the repo
+
+# Theme
 remote_theme: "mmistakes/minimal-mistakes@4.26.0"
 minimal_mistakes_skin: "default"
 
+# Markdown & math
 markdown: kramdown
 kramdown:
   input: GFM
   math_engine: mathjax
 highlighter: rouge
+mathjax: true   # enable MathJax site-wide
 
-permalink: /posts/:year-:month-:day-:title/
-paginate: 10
-search: true
-locale: en
-
-author:
-  name: "Abrar Zahin"
-  avatar: "/Abrar-Zahin-Blog/assets/img/avatar.jpg"
-  bio: "PhD @ ASU. Statistical ML, GGMs, agents."
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/zahinabrar"
-
+# Plugins (you already use these)
 plugins:
   - jekyll-remote-theme
-  - jekyll-include-cache     # <-- required for include_cached
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-archives
 
+# Archives (for /tags/ and /categories/ pages if you add them)
 jekyll-archives:
   enabled: [categories, tags]
   layouts:
@@ -45,19 +36,26 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
+# Home shows recent posts
+paginate: 10
+
+# Make posts look like Lilian’s
 defaults:
   - scope: { path: "", type: posts }
     values:
       layout: single
       classes: wide
+      author_profile: false
       toc: true
       toc_sticky: true
       read_time: true
-      author_profile: true
+      show_date: true
+      show_prev_next: false   # hide big Previous/Next bar
+      mathjax: true
   - scope: { path: "", type: pages }
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
-# Enable MathJax globally
-mathjax: true
+# Nice post URLs
+permalink: /posts/:year-:month-:day-:title/
