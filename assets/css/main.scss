@@ -10,17 +10,3 @@ body, body * {
   font-family: "Times New Roman", Times, serif !important;
 }
 
-/* Narrow reading column like Lil’Log */
-:root { --content-max: 760px; }
-
-.page .page__content,
-.post .post__content {
-  max-width: var(--content-max);
-  margin-inline: auto;
-}
-
-/* Comfortable reading */
-body {
-  font-size: 18px;
-  line-height: 1.75;
-}
