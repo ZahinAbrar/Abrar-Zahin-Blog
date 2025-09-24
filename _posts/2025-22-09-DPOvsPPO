@@ -1,0 +1,52 @@
+---
+title: "Direct Preference Optimization (DPO): A Simple Way to Align LLMs"
+layout: single
+categories: [ml, alignment]
+tags: [DPO, RLHF, LLM]
+---
+
+Large language models (LLMs) are powerful but often misaligned with human expectations. Traditionally, *Reinforcement Learning with Human Feedback (RLHF)* has been used to fix this, but RLHF is costly, unstable, and requires building a separate reward model.
+
+**Direct Preference Optimization (DPO)** is a simpler alternative.
+
+---
+
+## Why DPO?
+
+- **RLHF workflow**: generate responses → humans rank them → train a reward model → use reinforcement learning (PPO) to optimize.  
+- **Problems**: unstable training, reward hacking, high compute cost, and complex pipelines.  
+
+DPO eliminates the reward model and reinforcement learning step, making training more direct and efficient.
+
+---
+
+## How DPO Works
+
+1. **Generate pairs of responses**: For a given prompt, the model produces two answers.  
+2. **Human preference**: Annotators choose the better response.  
+3. **Direct optimization**: Instead of training a reward model, DPO applies a simple classification loss (cross-entropy) so the model increases probability of preferred responses and decreases probability of rejected ones.
+
+---
+
+## Key Advantages
+
+- **Simpler training**: No reward model, no PPO.  
+- **Stable and efficient**: Uses standard supervised training tools.  
+- **Better alignment**: Matches or outperforms RLHF on tasks like summarization and dialogue quality.  
+- **Cheaper to run**: Less compute and fewer moving parts.  
+
+---
+
+## When to Use DPO
+
+- Aligning LLMs to tone, style, or politeness.  
+- Improving summarization or dialogue coherence.  
+- Any setting where you want stable, human-aligned fine-tuning without heavy reinforcement learning.
+
+---
+
+## Takeaway
+
+DPO reframes alignment: *your LLM is its own reward model*. By directly learning from human preferences, we can achieve alignment that’s both **simpler and more effective** than traditional RLHF.
+
+---
