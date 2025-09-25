@@ -8,8 +8,8 @@
 /* Times New Roman site-wide */
 body, body * {
   font-family: "Times New Roman", Times, serif !important;
-  font-size: 15.5px;   /* smaller than 18px earlier */
-  line-height: 1.55;   /* tighter than 1.75 */
+  font-size: 16.5px;   /* slightly larger than 15.5px */
+  line-height: 1.6;    /* balanced spacing */
   font-weight: 400;
   color: #222;
 }
@@ -17,7 +17,7 @@ body, body * {
 /* Titles: Times New Roman, bold */
 .page__title,
 .post-title {
-  font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.3rem);
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 0.75rem;
