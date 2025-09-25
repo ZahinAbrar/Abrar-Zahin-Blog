@@ -1,13 +1,7 @@
----
-# only front matter
----
+/* REMOVE or comment out this block */
+/*
+body, body * {
+  font-family: "Times New Roman", Times, serif !important;
+}
+*/
 
-# @import "minimal-mistakes/skins/default";
-# @import "minimal-mistakes";
-
-#/* Force entire site to Times New Roman */
-#body, body * {
-#  font-family: "Times New Roman", Times, serif !important;}
-# 
-
-#
