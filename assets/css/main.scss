@@ -2,11 +2,12 @@
 # only front matter
 ---
 
-@import "minimal-mistakes/skins/default";
-@import "minimal-mistakes";
+# @import "minimal-mistakes/skins/default";
+# @import "minimal-mistakes";
 
-/* Force entire site to Times New Roman */
-body, body * {
-  font-family: "Times New Roman", Times, serif !important;
-}
+#/* Force entire site to Times New Roman */
+#body, body * {
+#  font-family: "Times New Roman", Times, serif !important;
+#}
 
+#
